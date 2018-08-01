@@ -1,0 +1,98 @@
+/*
+Fuente: http://codigofuente-de.blogspot.com/
+Unete a https://www.facebook.com/pages/Código-Fuente-de-Diseño-y-Programaciòn/876534622374945
+
+y sigue visistane nuestra web:
+http://codigofuente-de.blogspot.com/
+*/
+
+#titulo{
+	color:#9ACD32;
+	font-size: 25px;
+}
+form a{
+	text-decoration: none;
+	color: #9ACD32;
+}
+
+form label{	
+	font-size: 20px;
+}
+
+input[type="text"]{
+	padding: 5px 5px 10px 20px;
+	width: 570px;
+	-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; 
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+.formdedatos{
+	width: 500px;
+	padding: 25px 25px 25px 25px;    
+  margin: 0 auto;
+}
+
+.botons{
+   padding: 15px 17px;
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   line-height: 1;
+   color: #444;
+   border: none;
+   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+   background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #FFFFFF);
+   background-color: #fff;
+   border: 1px solid #f1f1f1;
+   border-radius: 10px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+   width: 40%;
+   cursor: pointer;
+}
+
+#tabla{
+  width: 600px;
+   
+}
+#tabla #td1{
+  width: 100px;
+}
+#tabla #td2{
+  width: 200px;
+}
+#tabla #td2{
+  width: 300px;
+}
+
+#tabla th{
+padding: 5px;
+background-color: #9ACD32;
+color: #FFFFFF;
+}
+
+#tabla td{
+padding: 5px;
+background-color: #ccc;
+color: #000;
+}
+
+#tabla th,#tabla td{
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-right-style: solid;
+border-bottom-style: solid;
+border-right-color: #558FA6;
+border-bottom-color: #558FA6;
+text-transform: uppercase;
+}
+footer{
+  text-align: center;
+  font-size: 16px;
+}
+/*
+Fuente: http://codigofuente-de.blogspot.com/
+Unete a https://www.facebook.com/pages/Código-Fuente-de-Diseño-y-Programaciòn/876534622374945
+
+y sigue visistane nuestra web:
+http://codigofuente-de.blogspot.com/
+*/

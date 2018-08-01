@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html> 
+    <head xmlns="http://www.w3.org/1999/xhtml"> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Únete a nuestro equipo</title>
+        <link rel="stylesheet" href="assets/estilo.css" type="text/css"> 
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    </head> 
+    <body> 
+        <form name='formulario' class="contact_form" id='formulario' method='post' action='assets/enviar_email.php' enctype="multipart/form-data"> 
+            <div>
+                <ul>
+                <li>  
+                    <div align="justify"><p>
+<h2>Únete a nuestro equipo</h2>
+
+<p>En Quality and Competitive College, S. C. estamos conscientes de que las personas son el mayor activo de una organización, por ello estamos en la búsqueda de gente comprometida con la integridad, la objetividad y la imparcialidad en materia de evaluación de la conformidad.  </p>
+<p>Si quieres unirte a nuestro equipo de trabajo, llena el formato de solicitud anexo y adjunta  la evidencia documental de tu información curricular.  </p>
+<p>Una vez que recibamos tu información personal, ésta será tratada con absoluta confidencialidad.
+  
+  Nuestro personal de la Dirección de Administración se pondrá en contacto contigo.</p>
+</p></div>
+                  <span class="required_notification">* Datos requeridos</span>  
+                </li>
+
+
+            <li>
+                <label for="name">Nombre Completo:</label>
+                <input type='text' name='Nombre' id='Nombre' placeholder="Nombre" required>
+                <span class="form_hint">Formato correcto: "Nombre (s)"</span>
+            </li>
+            <li>
+                <label for="cargo">Cargo solicitado:</label> 
+                <input type='text' name='Cargo' id='Apellidos' placeholder="Cargo" required>
+                <span class="form_hint">Formato correcto: "Cargo"</span>
+            </li>
+            <li>
+            <label for="telefono">Teléfono:</label>
+            <input type='text' name='Telefono' id='Telefono' placeholder="Teléfono">
+            <span class="form_hint">Formato correcto: "55-5555-5555 (10 digitos)"</span>
+            </li>
+            <li>
+                <label for="email">E-mail:</label>
+                <input type='text' name='E-mail' id='E-mail' placeholder="tu@correo.com" required>
+                <span class="form_hint">Formato correcto: "ejemplo@hotmail.com"</span>
+            </li> 
+            <li>  
+                    <label for="message">Mensaje:</label>  
+                    <textarea name="mensaje" cols="40" rows="6" placeholder="Ingresa un mensaje (opcional)"></textarea>
+                    <span class="form_hint">Ingresar información adicional</span> 
+                     
+                </li>
+            <li>
+                <label for="adjuntar archivo">Adjuntar CV:</label> 
+                <input type='file' name='archivo1' id='archivo1' placeholder="Carga tu CV" required>
+            </li align='center'> 
+            <li><div class="g-recaptcha" data-sitekey="6LeHfRUUAAAAANlXL660ziegGceWEe1z-7P_go5t"></div></li>
+            <li align='center'> 
+                <button class="submit" type='submit' value='Enviar formulario'>Enviar Mensaje</button>
+                <button class="submit" type='reset' value='Reiniiar formulario'>Borrar Datos</button>
+
+            </li>
+            </ul> 
+            
+    </form> 
+    </body> 
+</html>

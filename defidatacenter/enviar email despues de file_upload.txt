@@ -1,0 +1,79 @@
+<?php
+/**
+ * PHPMailer: Ejemplo de envío de email simple.
+ */
+require __DIR__ . '/class.phpmailer.php';
+// Crear una instancia de la clase PHPMailer
+$mail = new PHPMailer;
+// Envio de email simple
+$mail->isMail();
+// Desplegar errores y activar el debug
+$mail->SMTPDebug = 4;
+
+// ddc *** Coodinador
+$usuario_actual = wp_get_current_user(); 
+$email_coordinador = $usuario_actual->user_email;   //correo del coordinador el que da de alta el documento
+// ddc *** Empresa Cliente
+$id_empresa_cliente = get_blog_details("blog_id");
+$empresa_cliente = get_blog_details("blogname"); //= empresa en donde se dio de alta el documento  
+$url_cliente = get_blog_details("siteurl"); // ruta del sitio cliente
+// ddc *** lista de usuarios a los que se enviara la notificacion: 
+// ddc *** todos los clientes de la empresa donde se dio de alta el documento
+$users_cliente =   get_users( [ 'blog_id=$id_empresa_cliente&orderby=nicename&role=cliente']);
+
+$fecha_doc_upload = the_time('l, jS F, Y');  //fecha de alta del documento
+
+$doc_upload = documento dado de alta
+$folderdoc_upload =  carpeta en que se dio de alta
+
+
+
+empresaActual = wp_empresaActual
+numclientes= cuantos usuarios con rol cliente hay en empresaactual
+foreach (1 al numclientes) {
+        // Email del remitente (puedes poner algun email de prueba)
+        $mail->setFrom('gerente.tecnico@defihealthcare.com.mx', 'Administrador de DefiDataCenter');
+        // Email del destinatario (a quíen se enviará el mensaje)
+        $mail->addAddress('whoto@example.com', 'Nombre Apellido');
+        // Aquí agregar el asunto del mensaje
+        $mail->Subject = 'ASUNTO DEL MENSAJE';
+        // Escribir el mensaje HTML
+        $message = '<h1>MENSAJE HTML</h1>';
+        $mail->msgHTML($message);
+        // Enviar el mensaje y verificar si existen errores
+        if ($mail->send()) {
+        echo "MENSAJE SE HA ENVIADO";
+        } else {
+        echo "ERROR AL ENVIAR MENSAJE";
+
+
+        }
+
+function get_usuarios() { 
+ 
+    $usuarios = array();
+    $perfil = array('cliente', 'coordinador', 'administrador', 'admin');
+ 
+    foreach ($perfiles as $perfil) :
+        $query_usuarios = new WP_User_Query( array( 
+            'fields' => 'all_with_meta', 
+            'role' => $perfil, 
+            'orderby' => 'display_name'
+            ) );
+        $resultados = $query_usuarios->get_results();
+        if ($resultados) $usuarios = array_merge($usarios, $resultados);
+    endforeach;
+ 
+    return $usuarios;
+ }        
+}
+
+<?php
+global $ddc_current_site;
+$ddc_site = get_current_site();
+$ddc_current_site = $ddc_site->siteurl;
+echo "Saliendo de :".$ddc_current_site;
+?>
+// Hacer algo
+
+$ddc_current_site->site-name;

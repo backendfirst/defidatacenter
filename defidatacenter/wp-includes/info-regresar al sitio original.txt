@@ -1,0 +1,7 @@
+<?php
+global $ddc_current_site;
+$ddc_current_site = get_current_site();
+echo 'Estas en el sitio ' . $current_site->site_name;
+sleep(5);
+?>
+

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de Quejas</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head> 
+  
+<body>
+   
+              
+    <div id="formulario">
+     <h1>Formulario de Quejas</h1><h4>Procedimiento de quejas, disputas, apelaciones y solicitud de información.
+
+En caso de que tenga alguna queja, disputa, apelación, felicitación o comentario, mucho agradeceremos lo exprese en el formato siguiente:</h4>
+      <form class="form-inline" role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+		<br>
+         <label for="comentario">Tipo de comentario que corresponda (Queja, Disputa, Apelación, Felicitación, Comentario):</label><br>
+        <input class="form-control name=" name="comentario" type="text" required id="comentario" placeholder="(Queja, Disputa, Apelación, Felicitación, Comentario)" tabindex="1" title="Comentario">
+        <br>
+        <label for="nombre">Nombre / Organización</label><br>
+        <input class="form-control name=" name="nombre" type="text" required id="nombre" placeholder="Nombre / Organización" tabindex="1" title="Nombre">
+        <br>
+		<label for="persona">Persona a contactar (si es diferente del reclamante) </label><br>
+        <input class="form-control name=" name="persona" type="text" required id="persona" placeholder="Nombre Completo" tabindex="1" title="Persona">
+        <br>
+        <label for="email">Email</label><br>
+        <input class="form-control name=" name="email" type="email" required id="email" placeholder="email" tabindex="2" title="Email">
+        <br>
+        <label for="telefono">Teléfono</label><br>
+        <input class="form-control name=" name="telefono" type="text" id="telefono" placeholder="telefono" tabindex="3" title="Telefono">
+        <br>
+        <label for="ciudad">Dirección</label><br>
+        <input class="form-control name=" name="ciudad" type="text" id="ciudad" placeholder="ciudad" tabindex="4" title="Ciudad">
+         <br>
+        <label for="fecha">Ingrese la fecha de ocurrencia (dd/mm/aaaa)</label><br>
+        <input class="form-control name=" name="fecha" type="fecha" id="fecha" placeholder="fecha" tabindex="5" title="Fecha"><br>
+        <label for="producto">Número de referencia del producto o pedido (si lo conoce) 
+</label><br>
+        <input class="form-control name=" name="producto" type="text" id="producto" placeholder="Referencia del producto o pedido" tabindex="4" title="Producto">
+        <br>
+        <label for="Mensaje">Descripción </label><br>
+        <textarea class="form-control name=" name="mensaje" rows="4" id="mensaje" placeholder="Descripción " tabindex="6"></textarea>
+        <br><div class="g-recaptcha" data-sitekey="6LeHfRUUAAAAANlXL660ziegGceWEe1z-7P_go5t"></div>
+        <br>
+        <input class="btn btn-primary" type="submit" name="enviar" tabindex="7" value="Enviar"><input type="reset" tabindex="8" class="btn btn-primary" value="Borrar">
+        <input type="hidden" name="estado" value="1">
+        
+        </form>
+    </div>
+</body>
+</html>
